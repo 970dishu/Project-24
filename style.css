@@ -1,0 +1,103 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.logo-size{
+    width: 3rem;
+    
+}
+.name-lg{
+    display: flex;
+    justify-content: center;
+}
+
+/* Parallax effect and content */
+
+.parallax {
+    /* Full height and relative positioning */
+    height: 100vh;
+    position: relative;
+    /* Parallax background */
+    background-image: url('images/bg_2.webp'); /* Replace with the image path */
+    background-attachment:fixed; /* Key property for parallax */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Optional: add overlay for text readability */
+    padding: 40px;
+    border-radius: 20px;
+}
+/* .content h1{
+    font-size: 4rem;
+    font-family: fantasy;
+}
+.content p{
+    font-size: 1.2rem;
+} */
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('hero-background.jpg') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.hero-section h1 {
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+/* Services Section */
+.services-section {
+    background-color: #f8f9fa;
+}
+
+.service-box {
+    background-color: white;
+    transition: transform 0.3s ease-in-out;
+    border: 1px solid #eaeaea;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+}
+
+/* Features Section */
+.features-section {
+    background-color: #f8f9fa;
+}
+
+.feature-box {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+}
