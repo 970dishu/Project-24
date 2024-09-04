@@ -15,7 +15,7 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light gradient-nav">
         <img class="logo-size" src="images/favicon.jpg" alt="">
         &nbsp;
         &nbsp;
@@ -25,13 +25,14 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto h5">
                 <li class="nav-item"><a class="nav-link" href="#">What we do</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">What you need</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Articles</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Community</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Newsletter</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
-                <li class="nav-item"><a class="btn btn-primary ml-2" href="#">Download App</a></li>
+                <li class="nav-item"><a class="nav-link" style="color: #feb47b;" href="#">Download App</a></li>
             </ul>
         </div>
     </nav>
@@ -51,38 +52,38 @@
         <div class="container text-center text-white">
             <h1 class="display-4 font-weight-bold ">College Calm To Chaos</h1>
             <p class="lead mt-3">Take control of your tasks and achieve more with our app.</p>
-            <div class="mt-5">
+            <!-- <div class="mt-5">
                 <img src="" alt="App Preview" class="img-fluid">
-            </div>
+            </div> -->
         </div>
     </section>
 
 
     <!-- Our Services Section -->
-    <section class="services-section py-5">
+
+    <section id="services" class="services py-5 text-white">
         <div class="container">
-            <h2 class="text-center font-weight-bold mb-4">Our Services</h2>
-            <p class="text-center">We offer tailored solutions designed to meet every productivity need.</p>
-            <div class="row text-center mt-4">
+            <h2 class="text-center mb-4">Our Services</h2>
+            <div class="row text-center">
                 <div class="col-md-4">
-                    <div class="service-box p-4 shadow-sm rounded">
-                        <img src="icon1.png" alt="Icon" class="mb-3">
-                        <h5>Advanced Task Search</h5>
-                        <p>Quickly find and organize your tasks with our powerful search feature.</p>
+                    <div class="service-box">
+                        <i class="fas fa-lightbulb fa-3x mb-3"></i>
+                        <h4>Productivity Tips</h4>
+                        <p>Discover proven techniques to boost your productivity and stay ahead in your studies.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="service-box p-4 shadow-sm rounded">
-                        <img src="icon2.png" alt="Icon" class="mb-3">
-                        <h5>Urgent Task Display</h5>
-                        <p>Highlight critical tasks that need immediate attention, keeping you on track.</p>
+                    <div class="service-box">
+                        <i class="fas fa-calendar-check fa-3x mb-3"></i>
+                        <h4>Time Management</h4>
+                        <p>Learn how to effectively manage your time with scheduling tools and actionable advice.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="service-box p-4 shadow-sm rounded">
-                        <img src="icon3.png" alt="Icon" class="mb-3">
-                        <h5>Customizable Tasks</h5>
-                        <p>Flexibility in creating and customizing tasks to fit your unique workflow.</p>
+                    <div class="service-box">
+                        <i class="fas fa-heartbeat fa-3x mb-3"></i>
+                        <h4>Mental Well-being</h4>
+                        <p>Access resources and articles on maintaining mental health during your college journey.</p>
                     </div>
                 </div>
             </div>
@@ -90,22 +91,48 @@
     </section>
 
     <!-- Features Section -->
-    <section class="features-section py-5 bg-light">
+    <section id="features" class="features py-5">
         <div class="container">
-            <h2 class="text-center font-weight-bold mb-4">Super-Features</h2>
-            <p class="text-center">Explore features you’ll love</p>
-            <div class="row align-items-center mt-4">
-                <div class="col-md-6">
-                    <img src="feature-image.jpg" alt="App Features" class="img-fluid">
-                </div>
-                <div class="col-md-6">
-                    <div class="feature-box mb-4">
-                        <h5>Efficient Remaining Task Overview</h5>
-                        <p>Get a clear view of your pending tasks and manage your workload efficiently.</p>
+            <h2 class="text-center mb-4">Features</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="feature-box d-flex">
+                        <i class="fas fa-chart-line fa-2x text-primary mr-3"></i>
+                        <div>
+                            <h5>Personalized Productivity Plans</h5>
+                            <p>Get personalized recommendations and plans tailored to your unique study habits and
+                                challenges.</p>
+                        </div>
                     </div>
-                    <div class="feature-box mb-4">
-                        <h5>Flexible Creation & Customization</h5>
-                        <p>Create and customize tasks with ease to suit your specific needs.</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="feature-box d-flex">
+                        <i class="fas fa-book-reader fa-2x text-primary mr-3"></i>
+                        <div>
+                            <h5>Expert Articles & Guides</h5>
+                            <p>Access a library of articles and guides from experts on topics like focus, motivation,
+                                and time management.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="feature-box d-flex">
+                        <i class="fas fa-tasks fa-2x text-primary mr-3"></i>
+                        <div>
+                            <h5>Task & Goal Tracking</h5>
+                            <p>Track your tasks and goals with easy-to-use tools designed to keep you organized and
+                                motivated.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="feature-box d-flex">
+                        <i class="fas fa-users fa-2x text-primary mr-3"></i>
+                        <div>
+                            <h5>Community Support</h5>
+                            <p>Join a community of like-minded students to share tips, support each other, and stay
+                                accountable.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -113,9 +140,46 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4 text-center">
-        <p>&copy; 2024 Productify. All Rights Reserved.</p>
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Project Title and Message -->
+                <div class="col-md-4 mb-3">
+                    <h5>College Chaos to Calm</h5>
+                    <p>Thank you for visiting our website! We hope you find the resources helpful in your journey to a
+                        more productive college life.</p>
+                </div>
+                <!-- Contact Information -->
+                <div class="col-md-4 mb-3">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li>Email: <a href="mailto:contact@productify.com" class="text-white">contact@productify.com</a>
+                        </li>
+                        <li>Phone: +123 456 7890</li>
+                        <li>Location: 123 College Street, City, Country</li>
+                    </ul>
+                </div>
+                <!-- Social Media Links -->
+                <div class="col-md-4 mb-3">
+                    <h5>Follow Us</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="https://www.instagram.com" target="_blank"
+                                class="text-white"><i class="fab fa-instagram fa-2x"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com" target="_blank"
+                                class="text-white"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.twitter.com" target="_blank"
+                                class="text-white"><i class="fab fa-twitter fa-2x"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.github.com" target="_blank"
+                                class="text-white"><i class="fab fa-github fa-2x"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-3">
+                <p class="mb-0">&copy; 2024 Campus Cloud. All Rights Reserved.</p>
+            </div>
+        </div>
     </footer>
+
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
