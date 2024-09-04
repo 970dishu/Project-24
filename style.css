@@ -6,13 +6,9 @@ body {
 /* NavBar */
 
 .navbar {
-  background: linear-gradient(
-    to right,
-    #000000,
-    #000000
-  );
+  background: linear-gradient(to right, #000000, #000000);
   padding: 10px 20px;
-  border-radius: 0; 
+  border-radius: 0;
 }
 
 .logo-size {
@@ -22,7 +18,9 @@ body {
   display: flex;
   justify-content: center;
   padding-top: 10px;
-  font-family: math;
+  color: burlywood;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
 }
 
 /* Parallax effect and content */
@@ -30,7 +28,7 @@ body {
 .parallax {
   height: 100vh;
   position: relative;
-  background-image: url("images/person_1.webp");
+  background-image: url("images/person_4.webp");
   background-attachment: fixed; /* Key property for parallax */
   background-position: center;
   background-repeat: no-repeat;
@@ -44,12 +42,8 @@ body {
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
-  background: rgba(
-    0,
-    0,
-    0,
-    0.5); 
-    /* Optional: add overlay for text readability */
+  background: rgba(0, 0, 0, 0.5);
+  /* Optional: add overlay for text readability */
   padding: 40px;
   border-radius: 20px;
 }
@@ -70,9 +64,9 @@ body {
   align-items: center;
   color: white;
 
-    height: 100vh;
+  height: 100vh;
   position: relative;
-  background-image: url("images/person_1.webp");
+  background-image: url("images/person_4.webp");
   background-attachment: fixed; /* Key property for parallax */
   background-position: center;
   background-repeat: no-repeat;
@@ -112,7 +106,6 @@ body {
 /* Features Section */
 .features {
   background-color: #000000; /* White background for a clean look */
-
 }
 
 .feature-box {
