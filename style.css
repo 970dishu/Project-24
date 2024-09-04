@@ -8,11 +8,11 @@ body {
 .navbar {
   background: linear-gradient(
     to right,
-    #ffffff,
-    #feb47b
-  ); /* Adjust colors as needed */
-  padding: 10px 20px; /* Optional: Add padding for a nicer look */
-  border-radius: 0; /* Keep it square or adjust for rounded corners */
+    #000000,
+    #000000
+  );
+  padding: 10px 20px;
+  border-radius: 0; 
 }
 
 .logo-size {
@@ -21,6 +21,7 @@ body {
 .name-lg {
   display: flex;
   justify-content: center;
+  padding-top: 10px;
   font-family: math;
 }
 
@@ -29,7 +30,7 @@ body {
 .parallax {
   height: 100vh;
   position: relative;
-  background-image: url("images/bg_2.webp");
+  background-image: url("images/person_1.webp");
   background-attachment: fixed; /* Key property for parallax */
   background-position: center;
   background-repeat: no-repeat;
@@ -47,8 +48,8 @@ body {
     0,
     0,
     0,
-    0.5
-  ); /* Optional: add overlay for text readability */
+    0.5); 
+    /* Optional: add overlay for text readability */
   padding: 40px;
   border-radius: 20px;
 }
@@ -63,11 +64,19 @@ body {
 .hero-section {
   /* background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
     url("hero-background.jpg") no-repeat center center/cover; */
-  background: #000000;
+  /* background: #000000; */
   height: 90vh;
   display: flex;
   align-items: center;
   color: white;
+
+    height: 100vh;
+  position: relative;
+  background-image: url("images/person_1.webp");
+  background-attachment: fixed; /* Key property for parallax */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-section h1 {
@@ -102,7 +111,8 @@ body {
 
 /* Features Section */
 .features {
-  background-color: #ffffff; /* White background for a clean look */
+  background-color: #000000; /* White background for a clean look */
+
 }
 
 .feature-box {
