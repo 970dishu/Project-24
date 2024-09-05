@@ -47,11 +47,11 @@ body {
   padding: 40px;
   border-radius: 20px;
 }
-/* .content h1{
-    font-size: 4rem;
-    font-family: fantasy;
+.content h1 {
+  font-size: 2rem;
+  font-family: fantasy;
 }
-.content p{
+/*.content p{
     font-size: 1.2rem;
 } */
 /* Hero Section */
