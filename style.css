@@ -1,8 +1,25 @@
 /* Global Styles */
+/*PARA*/
+html {
+  height: 100vh;
+  overflow: hidden;
+}
+
 body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background: #222;
+  perspective: 1px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  transform-style: preserve-3d;
+
+  /*PARA*/
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #000000;
 }
+
 /* NavBar */
 
 .navbar {
@@ -26,15 +43,47 @@ body {
 /* Parallax effect and content */
 
 .parallax {
-  height: 100vh;
+  /* height: 100vh;
   position: relative;
   background-image: url("images/person_4.webp");
-  background-attachment: fixed; /* Key property for parallax */
-  background-position: center;
+  background-attachment: fixed;  */
+  /* Key property for parallax */
+  /* background-position: center;
   background-repeat: no-repeat;
+  background-size: cover; */
+  /*PARA*/
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  transform-style: preserve-3d;
+  /*PARA*/
+}
+/*PARA*/
+.parallax::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url(images/person_4.webp);
   background-size: cover;
+  background-position: center;
+  transform: translateZ(-1px) scale(2.2);
+  filter: blur(0.1px);
+}
+/*PARA*/
+
+@media (max-width: 768px) {
+  .parallax::before {
+    transform: translateZ(-0.5px) scale(1.5);
+  }
 }
 
+@media (max-width: 480px) {
+  .parallax::before {
+    transform: translateZ(-0.3px) scale(1.2);
+  }
+}
+/*PARA*/
 .content {
   position: absolute;
   top: 50%;
@@ -56,67 +105,107 @@ body {
 } */
 /* Hero Section */
 .hero-section {
-  /* background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
-    url("hero-background.jpg") no-repeat center center/cover; */
-  /* background: #000000; */
-  height: 90vh;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9));
+  
+  opacity: 70%;
   display: flex;
   align-items: center;
   color: white;
-
-  height: 100vh;
+  /*PARA*/
+  width: 100%;
+  min-height: 100vh;
   position: relative;
-  background-image: url("images/person_4.webp");
-  background-attachment: fixed; /* Key property for parallax */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  transform-style: preserve-3d;
+  /*PARA*/
 }
 
 .hero-section h1 {
   font-size: 5rem;
   font-weight: 500;
+  /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+    5px 5px 70px rgba(255, 255, 255, 0.3);
+  transform: scale(1, 1.1); */
 }
 
 .hero-section p {
   font-size: 1.2rem;
   margin-top: 1rem;
+
+  /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+  5px 5px 70px rgba(255, 255, 255, 0.3);
+transform: scale(1, 1.1); */
+}
+
+/* Slider Section */
+.slider-section {
+  background: #000000;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
 }
 
 /* Services Section */
 .services {
-  background-color: #000000; /* Light background color */
+  background-color: #000000;
 }
 
-.service-box {
+/* Gradient Background and 3D Effect for Service Boxes */
+.gradient-bg {
+  background: linear-gradient(
+    135deg,
+    #000000,
+    #333333
+  ); /* Adjust colors to match navbar */
+  border-radius: 15px; /* Smooth corners */
   padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.shadow-effect {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Initial shadow */
+}
+
+/* 3D Hover Effect */
 .service-box:hover {
-  transform: scale(1.05); /* Slightly enlarges the box on hover */
+  transform: translateY(-10px); /* Moves the box slightly up */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
 }
 
+/* Font and Icon Adjustments */
 .service-box i {
-  color: #007bff; /* Icon color */
+  color: #ffcc00; /* Icon color */
+  margin-bottom: 10px;
+}
+
+.service-box h4 {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.service-box p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .service-box {
+    margin-bottom: 20px; /* Space between boxes on smaller screens */
+  }
 }
 
 /* Features Section */
 .features {
-  background-color: #000000; /* White background for a clean look */
+  background-color: #000000; 
 }
 
 .feature-box {
-  border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.feature-box i {
-  color: #007bff; /* Consistent primary color for icons */
 }
 
 .feature-box h5 {
@@ -126,12 +215,54 @@ body {
 .feature-box p {
   margin: 0;
 }
+ 
+ /* Gradient Background and 3D Effect for Feature Boxes */
+.feature-box {
+    background: linear-gradient(135deg, #333333, #000000); /* Gradient colors matching overall theme */
+    border-radius: 15px; /* Smooth corners */
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shadow-effect {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Initial shadow */
+}
+
+/* 3D Hover Effect */
+.feature-box:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Font and Icon Adjustments */
+.feature-box i {
+    color: #ffcc00; /* Icon color to make them pop */
+    margin-bottom: 10px;
+}
+
+.feature-box h4 {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.feature-box p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .feature-box {
+        margin-bottom: 20px; /* Space between boxes on smaller screens */
+    }
+}
+
 /* Footer */
 .footer {
   background-color: #333;
   color: #fff;
   padding: 40px 0;
-  font-size: 14px;
+  font-size: 10px;
   line-height: 1.6;
 }
 
@@ -146,7 +277,7 @@ body {
 }
 
 .footer h5 {
-  font-size: 30px;
+  font-size: 20px;
   margin-bottom: 15px;
   font-weight: bold;
 }
