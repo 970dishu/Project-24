@@ -7,7 +7,7 @@ body {
 /* Newsletter Section Styles */
 .newsletter-section {
     background: linear-gradient(135deg, #333333, #000000);
-    padding: 80px 0px;
+    padding: 150px;
 }
 
 .newsletter-section h2 {
@@ -44,17 +44,17 @@ body {
 
 .cartoon-element {
     width: 80%;
-    max-width: 300px;
+    max-width: 500px;
     animation: float 3s ease-in-out infinite;
 }
 
 /* Keyframes for Floating Animation */
 @keyframes float {
     0%, 100% {
-        transform: translatey(0px);
+        transform: translatey(-90px);
     }
     50% {
-        transform: translatey(-20px);
+        transform: translatey(-30px);
     }
 }
 
@@ -73,6 +73,6 @@ body {
     }
 
     .cartoon-element {
-        max-width: 200px;
+        max-width: 250px;
     }
 }
