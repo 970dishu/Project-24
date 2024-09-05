@@ -23,7 +23,7 @@ body {
 /* NavBar */
 
 .navbar {
-  background: linear-gradient(to right, #000000, #000000);
+  background: linear-gradient(135deg, #000000, #333333);
   padding: 10px 20px;
   border-radius: 0;
 }
@@ -106,7 +106,7 @@ body {
 /* Hero Section */
 .hero-section {
   background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9));
-  
+
   opacity: 70%;
   display: flex;
   align-items: center;
@@ -199,7 +199,7 @@ transform: scale(1, 1.1); */
 
 /* Features Section */
 .features {
-  background-color: #000000; 
+  background-color: #000000;
 }
 
 .feature-box {
@@ -215,46 +215,50 @@ transform: scale(1, 1.1); */
 .feature-box p {
   margin: 0;
 }
- 
- /* Gradient Background and 3D Effect for Feature Boxes */
+
+/* Gradient Background and 3D Effect for Feature Boxes */
 .feature-box {
-    background: linear-gradient(135deg, #333333, #000000); /* Gradient colors matching overall theme */
-    border-radius: 15px; /* Smooth corners */
-    padding: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(
+    135deg,
+    #333333,
+    #000000
+  ); /* Gradient colors matching overall theme */
+  border-radius: 15px; /* Smooth corners */
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .shadow-effect {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Initial shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Initial shadow */
 }
 
 /* 3D Hover Effect */
 .feature-box:hover {
-    transform: translateY(-10px); /* Slight lift on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  transform: translateY(-10px); /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
 
 /* Font and Icon Adjustments */
 .feature-box i {
-    color: #ffcc00; /* Icon color to make them pop */
-    margin-bottom: 10px;
+  color: #ffcc00; /* Icon color to make them pop */
+  margin-bottom: 10px;
 }
 
 .feature-box h4 {
-    font-weight: bold;
-    margin-top: 10px;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 .feature-box p {
-    font-size: 1rem;
-    line-height: 1.5;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    .feature-box {
-        margin-bottom: 20px; /* Space between boxes on smaller screens */
-    }
+  .feature-box {
+    margin-bottom: 20px; /* Space between boxes on smaller screens */
+  }
 }
 
 /* Footer */

@@ -1,29 +1,19 @@
 /* Global Styles */
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f0f0;
+    background: linear-gradient(135deg, #333333, #000000);
     margin: 0;
     padding: 0;
 }
 
 /* Coming Soon Section Styles */
 .coming-soon-section {
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
     background: linear-gradient(135deg, #333333, #000000);
     color: #fff;
     padding: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.coming-soon-section .display-1 {
-    font-weight: bold;
-    color: #ffcc00; /* Highlight color matching your theme */
-}
-
-.coming-soon-section p.lead {
-    font-size: 1.3rem;
-    color: #dcdcdc;
-}
 
 /* Map Container Styles */
 .map-container {
